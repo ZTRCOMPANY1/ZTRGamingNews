@@ -9,7 +9,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&amp;display=swap" rel="stylesheet"/>
   <link href="assets/css/style.css" rel="stylesheet"/>
   <title>
-   Matéria | ZTR Games
+   Notícias | ZTR Games
   </title>
  </head>
  <body>
@@ -29,29 +29,23 @@
      </div>
     </a>
     <nav class="desktop-nav">
-     <a href="index.html">
+     <a href="index">
       Início
      </a>
-     <a href="news.html">
+     <a href="news">
       Notícias
      </a>
-     <a href="platforms.html">
+     <a href="platforms">
       Plataformas
      </a>
-     <a href="schedule.html">
+     <a href="schedule">
       Agenda
      </a>
-     <a href="promotions.html">
+     <a href="promotions">
       Promoções
      </a>
-     <a href="reviews.html">
+     <a href="reviews">
       Reviews
-     </a>
-     <a href="radar.html">
-      Radar
-     </a>
-     <a href="newsletter.html">
-      Newsletter
      </a>
     </nav>
     <div class="header-actions">
@@ -94,7 +88,49 @@
    </div>
   </header>
   <main class="container">
-   <section class="section" data-article-root="">
+   <section class="page-hero">
+    <div class="page-banner">
+     <span class="pill">
+      Central de notícias
+     </span>
+     <h1>
+      Todas as notícias do portal
+     </h1>
+     <p>
+      Busca local, filtro por plataforma e cards com imagem ligados à matéria.
+     </p>
+    </div>
+   </section>
+   <section class="section">
+    <div class="toolbar">
+     <div class="search">
+      <input data-news-search="" placeholder="Buscar por título, plataforma ou fonte..." type="search"/>
+     </div>
+     <div class="filter-row">
+      <button class="filter-btn active" data-news-filter="Todas">
+       Todas
+      </button>
+      <button class="filter-btn" data-news-filter="PlayStation">
+       PlayStation
+      </button>
+      <button class="filter-btn" data-news-filter="Xbox">
+       Xbox
+      </button>
+      <button class="filter-btn" data-news-filter="Nintendo">
+       Nintendo
+      </button>
+      <button class="filter-btn" data-news-filter="Steam">
+       Steam
+      </button>
+      <button class="filter-btn" data-news-filter="Epic Games">
+       Epic Games
+      </button>
+     </div>
+     <span class="text-muted" data-news-count="">
+     </span>
+    </div>
+    <div class="news-grid" data-news-grid="">
+    </div>
    </section>
   </main>
   <footer class="footer">

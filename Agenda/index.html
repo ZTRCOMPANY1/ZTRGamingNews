@@ -9,7 +9,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&amp;display=swap" rel="stylesheet"/>
   <link href="assets/css/style.css" rel="stylesheet"/>
   <title>
-   Promoções | ZTR Games
+   Agenda | ZTR Games
   </title>
  </head>
  <body>
@@ -29,29 +29,23 @@
      </div>
     </a>
     <nav class="desktop-nav">
-     <a href="index.html">
+<a href="index">
       Início
      </a>
-     <a href="news.html">
+     <a href="news">
       Notícias
      </a>
-     <a href="platforms.html">
+     <a href="platforms">
       Plataformas
      </a>
-     <a href="schedule.html">
+     <a href="schedule">
       Agenda
      </a>
-     <a href="promotions.html">
+     <a href="promotions">
       Promoções
      </a>
-     <a href="reviews.html">
+     <a href="reviews">
       Reviews
-     </a>
-     <a href="radar.html">
-      Radar
-     </a>
-     <a href="newsletter.html">
-      Newsletter
      </a>
     </nav>
     <div class="header-actions">
@@ -97,33 +91,40 @@
    <section class="page-hero">
     <div class="page-banner">
      <span class="pill">
-      Promoções
+      Agenda
      </span>
      <h1>
-      Promoções de jogos
+      Eventos e lançamentos
      </h1>
      <p>
-      Filtro para grátis ou pagos, countdown automático e botão que redireciona para a plataforma da oferta.
+      Nesta página eles já ficam separados um do lado do outro: eventos de um lado, lançamentos do outro.
      </p>
     </div>
    </section>
-   <section class="section">
-    <div class="toolbar">
-     <label class="select">
-      <select data-promo-filter="">
-       <option value="all">
-        Todas as promoções
-       </option>
-       <option value="free">
-        Somente grátis
-       </option>
-       <option value="paid">
-        Somente pagas
-       </option>
-      </select>
-     </label>
+   <section class="section two-columns">
+    <div class="panel">
+     <div class="section-head">
+      <h2>
+       Eventos
+      </h2>
+      <span>
+       Oficiais
+      </span>
+     </div>
+     <div class="list-column" data-events-list="">
+     </div>
     </div>
-    <div class="promo-grid" data-promos-grid="">
+    <div class="panel">
+     <div class="section-head">
+      <h2>
+       Lançamentos
+      </h2>
+      <span>
+       Confirmados
+      </span>
+     </div>
+     <div class="list-column" data-launches-list="">
+     </div>
     </div>
    </section>
   </main>

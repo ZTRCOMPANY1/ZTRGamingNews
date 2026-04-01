@@ -9,7 +9,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&amp;display=swap" rel="stylesheet"/>
   <link href="assets/css/style.css" rel="stylesheet"/>
   <title>
-   Reviews | ZTR Games
+   Promoções | ZTR Games
   </title>
  </head>
  <body>
@@ -29,29 +29,23 @@
      </div>
     </a>
     <nav class="desktop-nav">
-     <a href="index.html">
+<a href="index">
       Início
      </a>
-     <a href="news.html">
+     <a href="news">
       Notícias
      </a>
-     <a href="platforms.html">
+     <a href="platforms">
       Plataformas
      </a>
-     <a href="schedule.html">
+     <a href="schedule">
       Agenda
      </a>
-     <a href="promotions.html">
+     <a href="promotions">
       Promoções
      </a>
-     <a href="reviews.html">
+     <a href="reviews">
       Reviews
-     </a>
-     <a href="radar.html">
-      Radar
-     </a>
-     <a href="newsletter.html">
-      Newsletter
      </a>
     </nav>
     <div class="header-actions">
@@ -97,18 +91,33 @@
    <section class="page-hero">
     <div class="page-banner">
      <span class="pill">
-      Reviews
+      Promoções
      </span>
      <h1>
-      Todos os reviews
+      Promoções de jogos
      </h1>
      <p>
-      Seção separada, com seus cards próprios e botão dedicado na home.
+      Filtro para grátis ou pagos, countdown automático e botão que redireciona para a plataforma da oferta.
      </p>
     </div>
    </section>
    <section class="section">
-    <div class="reviews-grid" data-reviews-grid="">
+    <div class="toolbar">
+     <label class="select">
+      <select data-promo-filter="">
+       <option value="all">
+        Todas as promoções
+       </option>
+       <option value="free">
+        Somente grátis
+       </option>
+       <option value="paid">
+        Somente pagas
+       </option>
+      </select>
+     </label>
+    </div>
+    <div class="promo-grid" data-promos-grid="">
     </div>
    </section>
   </main>
