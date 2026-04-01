@@ -12,6 +12,6 @@ window.ZTR_CONFIG = {
   newsletterCollection: "newsletter_subscribers",
   admin: {
     enabled: true,
-    allowedEmail: ""
+    allowedEmail: "ztrcompany1@gmail.com"
   }
 };

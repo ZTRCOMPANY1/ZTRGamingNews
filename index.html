@@ -1,26 +1,310 @@
-<!DOCTYPE html><html lang="pt-BR"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta name="description" content="Portal gamer estático com notícias atualizadas, promoções, reviews, radar e páginas por plataforma."><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet"><link rel="stylesheet" href="assets/css/style.css"><title>ZTR Games | Portal gamer atualizado</title></head><body><header class="site-header"><div class="container header-inner"><a class="brand" href="index.html"><div class="logo">Z</div><div class="brand-copy"><strong>ZTR GAMES</strong><small>Portal gamer atualizado</small></div></a><nav class="desktop-nav"><a href="index.html">Início</a><a href="news.html">Notícias</a><a href="platforms.html">Plataformas</a><a href="schedule.html">Agenda</a><a href="promotions.html">Promoções</a><a href="reviews.html">Reviews</a><a href="radar.html">Radar</a><a href="newsletter.html">Newsletter</a><a href="admin-newsletter.html">Admin</a></nav><div class="header-actions"><a class="btn btn-ghost" href="news.html">Explorar</a><a class="btn btn-primary" href="promotions.html">Ofertas</a></div><button class="menu-btn" data-menu-btn>☰</button></div><div class="container mobile-nav" data-mobile-nav><a href="index.html">Início</a><a href="news.html">Notícias</a><a href="platforms.html">Plataformas</a><a href="schedule.html">Agenda</a><a href="promotions.html">Promoções</a><a href="reviews.html">Reviews</a><a href="radar.html">Radar</a><a href="newsletter.html">Newsletter</a><a href="admin-newsletter.html">Admin</a></div></header><main class="container">
-<section class="hero-grid" data-home-hero></section>
-<section class="section">
-  <div class="section-head"><h2>Últimas notícias</h2><span>Atualização editorial do dia</span></div>
-  <div class="news-grid" data-latest-grid></div>
-</section>
-<section class="section home-columns">
-  <div class="panel"><div class="section-head"><h2>Mais lidas</h2><span>Portal</span></div><ul class="popular-list" data-popular-list></ul></div>
-  <div class="panel newsletter-block">
-    <div><span class="pill">Newsletter</span><h2 style="margin:12px 0 10px">Cadastre e exporte os inscritos</h2><p style="color:var(--muted)">No modo estático, os cadastros ficam salvos no navegador. Se você preencher newsletterReceiverEmail em assets/js/config.js, o site também abre o cliente de e-mail ao cadastrar.</p><form class="newsletter-form" data-newsletter-form><input type="email" placeholder="Seu melhor e-mail" required><button class="btn btn-primary" type="submit">Cadastrar</button></form><div class="newsletter-message" data-newsletter-message></div></div><div class="subscribers-box"><div class="section-head"><h2 style="font-size:1.2rem">Inscritos locais</h2><span>Demo funcional</span></div><ul data-subscribers-list></ul><div style="display:flex;gap:10px;flex-wrap:wrap;margin-top:14px"><button class="btn btn-ghost btn-small" data-export-subs>Exportar CSV</button><button class="btn btn-ghost btn-small" data-clear-subs>Limpar lista</button></div></div>
-  </div>
-</section>
-<section class="section review-radar">
-  <div class="panel"><div class="section-head"><h2>Reviews</h2><a class="btn btn-ghost btn-small" href="reviews.html">Ver todos os reviews</a></div><div class="reviews-grid" data-reviews-preview></div></div>
-  <div class="panel"><div class="section-head"><h2>Radar</h2><a class="btn btn-ghost btn-small" href="radar.html">Ver todo o radar</a></div><div class="radar-grid" data-radar-preview></div></div>
-</section>
-<section class="section">
-  <div class="section-head"><h2>Eventos e lançamentos</h2><span>Separados lado a lado</span></div>
-  <div class="two-columns">
-    <div class="panel"><div class="section-head"><h2 style="font-size:1.3rem">Eventos</h2><span>Calendário</span></div><div class="list-column" data-events-column></div></div>
-    <div class="panel"><div class="section-head"><h2 style="font-size:1.3rem">Lançamentos</h2><span>Calendário</span></div><div class="list-column" data-launches-column></div></div>
-  </div>
-</section>
-<section class="section"><div class="section-head"><h2>Plataformas</h2><span>Clique em uma plataforma</span></div><div class="platforms-grid" data-platform-cards></div></section>
-<section class="section"><div class="section-head"><h2>Promoções em destaque</h2><a class="btn btn-ghost btn-small" href="promotions.html">Ver promoções</a></div><div class="promo-grid" data-promo-preview></div></section>
-</main><footer class="footer"><div class="container footer-grid"><div class="footer-card"><h4>ZTR Games</h4><p>Portal multipágina pronto para GitHub Pages.</p></div><div class="footer-card"><h4>Seções</h4><a href="news.html">Notícias</a><a href="promotions.html">Promoções</a><a href="schedule.html">Agenda</a></div><div class="footer-card"><h4>Guias</h4><a href="platforms.html">Plataformas</a><a href="reviews.html">Reviews</a><a href="radar.html">Radar</a></div><div class="footer-card"><h4>© <span data-year></span></h4><p>Site estático feito para você editar e publicar.</p></div></div></footer><script src="assets/js/data.js"></script><script src="assets/js/config.js"></script><script src="assets/js/app.js"></script></body></html>
+<!DOCTYPE html>
+<html lang="pt-BR">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <meta content="Portal gamer estático com notícias atualizadas, promoções, reviews, radar e páginas por plataforma." name="description"/>
+  <link href="https://fonts.googleapis.com" rel="preconnect"/>
+  <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&amp;display=swap" rel="stylesheet"/>
+  <link href="assets/css/style.css" rel="stylesheet"/>
+  <title>
+   ZTR Games | Portal gamer atualizado
+  </title>
+ </head>
+ <body>
+  <header class="site-header">
+   <div class="container header-inner">
+    <a class="brand" href="index.html">
+     <div class="logo">
+      Z
+     </div>
+     <div class="brand-copy">
+      <strong>
+       ZTR GAMES
+      </strong>
+      <small>
+       Portal gamer atualizado
+      </small>
+     </div>
+    </a>
+    <nav class="desktop-nav">
+     <a href="index.html">
+      Início
+     </a>
+     <a href="news.html">
+      Notícias
+     </a>
+     <a href="platforms.html">
+      Plataformas
+     </a>
+     <a href="schedule.html">
+      Agenda
+     </a>
+     <a href="promotions.html">
+      Promoções
+     </a>
+     <a href="reviews.html">
+      Reviews
+     </a>
+     <a href="radar.html">
+      Radar
+     </a>
+     <a href="newsletter.html">
+      Newsletter
+     </a>
+    </nav>
+    <div class="header-actions">
+     <a class="btn btn-ghost" href="news.html">
+      Explorar
+     </a>
+     <a class="btn btn-primary" href="promotions.html">
+      Ofertas
+     </a>
+    </div>
+    <button class="menu-btn" data-menu-btn="">
+     ☰
+    </button>
+   </div>
+   <div class="container mobile-nav" data-mobile-nav="">
+    <a href="index.html">
+     Início
+    </a>
+    <a href="news.html">
+     Notícias
+    </a>
+    <a href="platforms.html">
+     Plataformas
+    </a>
+    <a href="schedule.html">
+     Agenda
+    </a>
+    <a href="promotions.html">
+     Promoções
+    </a>
+    <a href="reviews.html">
+     Reviews
+    </a>
+    <a href="radar.html">
+     Radar
+    </a>
+    <a href="newsletter.html">
+     Newsletter
+    </a>
+   </div>
+  </header>
+  <main class="container">
+   <section class="hero-grid" data-home-hero="">
+   </section>
+   <section class="section">
+    <div class="section-head">
+     <h2>
+      Últimas notícias
+     </h2>
+     <span>
+      Atualização editorial do dia
+     </span>
+    </div>
+    <div class="news-grid" data-latest-grid="">
+    </div>
+   </section>
+   <section class="section home-columns">
+    <div class="panel">
+     <div class="section-head">
+      <h2>
+       Mais lidas
+      </h2>
+      <span>
+       Portal
+      </span>
+     </div>
+     <ul class="popular-list" data-popular-list="">
+     </ul>
+    </div>
+    <div class="panel newsletter-block">
+     <div>
+      <span class="pill">
+       Newsletter
+      </span>
+      <h2 style="margin:12px 0 10px">
+       Cadastre e exporte os inscritos
+      </h2>
+      <p style="color:var(--muted)">
+       No modo estático, os cadastros ficam salvos no navegador. Se você preencher newsletterReceiverEmail em assets/js/config.js, o site também abre o cliente de e-mail ao cadastrar.
+      </p>
+      <form class="newsletter-form" data-newsletter-form="">
+       <input placeholder="Seu melhor e-mail" required="" type="email"/>
+       <button class="btn btn-primary" type="submit">
+        Cadastrar
+       </button>
+      </form>
+      <div class="newsletter-message" data-newsletter-message="">
+      </div>
+     </div>
+     <div class="subscribers-box">
+      <div class="section-head">
+       <h2 style="font-size:1.2rem">
+        Inscritos locais
+       </h2>
+       <span>
+        Demo funcional
+       </span>
+      </div>
+      <ul data-subscribers-list="">
+      </ul>
+      <div style="display:flex;gap:10px;flex-wrap:wrap;margin-top:14px">
+       <button class="btn btn-ghost btn-small" data-export-subs="">
+        Exportar CSV
+       </button>
+       <button class="btn btn-ghost btn-small" data-clear-subs="">
+        Limpar lista
+       </button>
+      </div>
+     </div>
+    </div>
+   </section>
+   <section class="section review-radar">
+    <div class="panel">
+     <div class="section-head">
+      <h2>
+       Reviews
+      </h2>
+      <a class="btn btn-ghost btn-small" href="reviews.html">
+       Ver todos os reviews
+      </a>
+     </div>
+     <div class="reviews-grid" data-reviews-preview="">
+     </div>
+    </div>
+    <div class="panel">
+     <div class="section-head">
+      <h2>
+       Radar
+      </h2>
+      <a class="btn btn-ghost btn-small" href="radar.html">
+       Ver todo o radar
+      </a>
+     </div>
+     <div class="radar-grid" data-radar-preview="">
+     </div>
+    </div>
+   </section>
+   <section class="section">
+    <div class="section-head">
+     <h2>
+      Eventos e lançamentos
+     </h2>
+     <span>
+      Separados lado a lado
+     </span>
+    </div>
+    <div class="two-columns">
+     <div class="panel">
+      <div class="section-head">
+       <h2 style="font-size:1.3rem">
+        Eventos
+       </h2>
+       <span>
+        Calendário
+       </span>
+      </div>
+      <div class="list-column" data-events-column="">
+      </div>
+     </div>
+     <div class="panel">
+      <div class="section-head">
+       <h2 style="font-size:1.3rem">
+        Lançamentos
+       </h2>
+       <span>
+        Calendário
+       </span>
+      </div>
+      <div class="list-column" data-launches-column="">
+      </div>
+     </div>
+    </div>
+   </section>
+   <section class="section">
+    <div class="section-head">
+     <h2>
+      Plataformas
+     </h2>
+     <span>
+      Clique em uma plataforma
+     </span>
+    </div>
+    <div class="platforms-grid" data-platform-cards="">
+    </div>
+   </section>
+   <section class="section">
+    <div class="section-head">
+     <h2>
+      Promoções em destaque
+     </h2>
+     <a class="btn btn-ghost btn-small" href="promotions.html">
+      Ver promoções
+     </a>
+    </div>
+    <div class="promo-grid" data-promo-preview="">
+    </div>
+   </section>
+  </main>
+  <footer class="footer">
+   <div class="container footer-grid">
+    <div class="footer-card">
+     <h4>
+      ZTR Games
+     </h4>
+     <p>
+      Portal multipágina pronto para GitHub Pages.
+     </p>
+    </div>
+    <div class="footer-card">
+     <h4>
+      Seções
+     </h4>
+     <a href="news.html">
+      Notícias
+     </a>
+     <a href="promotions.html">
+      Promoções
+     </a>
+     <a href="schedule.html">
+      Agenda
+     </a>
+    </div>
+    <div class="footer-card">
+     <h4>
+      Guias
+     </h4>
+     <a href="platforms.html">
+      Plataformas
+     </a>
+     <a href="reviews.html">
+      Reviews
+     </a>
+     <a href="radar.html">
+      Radar
+     </a>
+    </div>
+    <div class="footer-card">
+     <h4>
+      ©
+      <span data-year="">
+      </span>
+     </h4>
+     <p>
+      Site estático feito para você editar e publicar.
+     </p>
+    </div>
+   </div>
+  </footer>
+  <script src="assets/js/data.js">
+  </script>
+  <script src="assets/js/config.js">
+  </script>
+  <script src="assets/js/app.js">
+  </script>
+ </body>
+</html>
