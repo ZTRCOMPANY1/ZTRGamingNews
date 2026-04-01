@@ -130,14 +130,16 @@ button,input,textarea{font:inherit;transition:var(--transition)}
   backdrop-filter:blur(8px);
   border-bottom:1px solid var(--line);
 }
-.section-nav-inner{display:flex;gap:22px;align-items:center;overflow:auto;padding:14px 0}
-.section-nav a{
-  color:#444;
-  font-weight:800;
-  font-size:.96rem;
-  white-space:nowrap;
-  position:relative;
-  padding-bottom:10px;
+.section-nav-inner{
+  display:flex;
+  color: #ad6200;
+  font-weight: 800;
+  font-size: 100%;
+  gap:22px;
+  align-items:center;
+  justify-content:center;
+  overflow:auto;
+  padding:14px 0;
 }
 .section-nav a.active,.section-nav a:hover{color:var(--text)}
 .section-nav a.active::after,.section-nav a:hover::after{
