@@ -27,8 +27,8 @@ function initHeader(){
   qsa('[data-year]').forEach(el => el.textContent = new Date().getFullYear());
 }
 
-function articleUrl(slug){ return `article.html?slug=${encodeURIComponent(slug)}`; }
-function platformUrl(slug){ return `platform.html?platform=${encodeURIComponent(slug)}`; }
+function articleUrl(slug){ return `../../Artigos/?slug=${encodeURIComponent(slug)}`; }
+function platformUrl(slug){ return `../../Plataforma/?platform=${encodeURIComponent(slug)}`; }
 
 function renderCard(item, large=false){
   return `
@@ -142,7 +142,7 @@ function renderArticle(){
         <div class="article-content">
           ${item.body.map(p => `<p>${esc(p)}</p>`).join('')}
           <div class="bullet-box"><h3>Pontos principais</h3><ul>${item.bullets.map(b => `<li>${esc(b)}</li>`).join('')}</ul></div>
-          <div class="article-actions"><a class="btn btn-primary" href="news.html">Ver todas as notícias</a><button class="btn btn-ghost" data-copy-link>Copiar link</button></div>
+          <div class="article-actions"><a class="btn btn-primary" href="../Noticias">Ver todas as notícias</a><button class="btn btn-ghost" data-copy-link>Copiar link</button></div>
         </div>
         <aside class="article-side"><div class="side-panel"><h3>Mais notícias</h3>${DATA.news.slice(0,4).map(n => `<a class="side-link" href="${articleUrl(n.slug)}">${esc(n.title)}</a>`).join('')}</div></aside>
       </div>
